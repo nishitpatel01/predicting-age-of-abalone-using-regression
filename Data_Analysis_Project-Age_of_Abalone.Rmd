@@ -1,24 +1,16 @@
 ---
-title: "Data Analysis Project - Predicting the age of abalone"
-author: "Abhisek Jana, Nishit K Patel"
+title: "Predicting the age of abalone using regression"
 date: "July 24, 2017"
 output:
   html_document: 
     toc: yes
----
-
-## Team
- - Abhisek Jana (abhisek2)
- - Nishit K Patel (nkp3)
-
+--
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
 ## Introduction
-
   - Abalone is a shellfish considered a delicacy in many parts of the world. An excellent source of iron and pantothenic acid, and a nutritious food resource and farming in Australia, America and East Asia. 100 grams of abalone yields more than 20% recommended daily intake of these nutrients. The economic value of abalone is positively correlated with its age. Therefore, to detect the age of abalone accurately is important for both farmers and customers to determine its price. However, the current technology to decide the age is quite costly and inefficient. Farmers usually cut the shells and count the rings through microscopes to estimate the abalones age. Telling the age of abalone is therefore difficult mainly because their size depends not only on their age, but on the availability of food as well. Moreover, abalone sometimes form the so-called 'stunted' populations which have their growth characteristics very different from other abalone populations This complex method increases the cost and limits its popularity. Our goal in this report is to find out the best indicators to forecast the rings, then the age of abalones.
   
 ### Dataset
@@ -52,20 +44,6 @@ knitr::opts_chunk$set(echo = TRUE)
    | Viscera weight	 |  continuous	 | grams	 |  gut weight (after bleeding)  |
    | Shell weight |  continuous	 | grams	 |  after being dried  |
    | Rings |  continuous	 |  | +1.5 gives the age in years  |
-
-#### Interest
-
-- **Predicting the age of abalone from physical measurements:**  
-    - The age of abalone is determined by cutting the shell       through the cone, staining it, and counting the number of rings through a microscope -- a boring and
-      time-consuming task.  Other measurements, which are easier to obtain, are used to predict the age.  Further           information, such as weather patterns and location (hence food availability) may be required to solve the             problem.
-- **Apply different regression techniques:**
-    - We are interested in performing various regression techniques such as additive models, interactions, polynomial transformations of the variables etc to be able to predict and assess the accuracy of our prediction.
-- **Beyond regression models:**
-    - Is there any other type of machine learning methodology which can predict the age more accurately than using regression model ?
-
-- **Implementation in real application:**
-    - Understand whether the data set & the regression models are sufficient to predict the age of abalone accurately enough so that it can be used in real application. 
-
 
 ## Methods
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
