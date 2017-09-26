@@ -34,3 +34,16 @@
    | Viscera weight	 |  continuous	 | grams	 |  gut weight (after bleeding)  |
    | Shell weight |  continuous	 | grams	 |  after being dried  |
    | Rings |  continuous	 |  | +1.5 gives the age in years  |
+
+#### Interest
+
+- **Predicting the age of abalone from physical measurements:**  
+    - The age of abalone is determined by cutting the shell       through the cone, staining it, and counting the number of rings through a microscope -- a boring and
+      time-consuming task.  Other measurements, which are easier to obtain, are used to predict the age.  Further           information, such as weather patterns and location (hence food availability) may be required to solve the             problem.
+- **Apply different regression techniques:**
+    - We are interested in performing various regression techniques such as additive models, interactions, polynomial transformations of the variables etc to be able to predict and assess the accuracy of our prediction.
+- **Beyond regression models:**
+    - Is there any other type of machine learning methodology which can predict the age more accurately than using regression model ?
+
+- **Implementation in real application:**
+    - Understand whether the data set & the regression models are sufficient to predict the age of abalone accurately enough so that it can be used in real application. 
