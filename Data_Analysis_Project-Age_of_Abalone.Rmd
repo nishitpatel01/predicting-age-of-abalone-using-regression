@@ -85,8 +85,6 @@ kable(abalone[1:10,], digits = 4,format = 'markdown')
 
 ####Pair Plot
 
-- We will now plot pairs graph to see the relationship between predictors and response, correlation, frequency distribution, shape of distributions.
-
 ```{r, fig.height=10, fig.width=12, message=FALSE, warning=FALSE}
 ggpairs(abalone, aes(colour = Sex, alpha = 0.8), title="Pairs plot for abalone dataset") + 
   theme_grey(base_size = 8)
