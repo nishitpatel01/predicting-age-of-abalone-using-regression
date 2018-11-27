@@ -1,17 +1,8 @@
----
-output: 
-  html_document: 
-    keep_md: yes
----
+
 
 ---
-title: "Predicting the age of abalone using regression"
-date: "July 24, 2017"
-output: md_document
-    variant: markdown_github
-    toc: yes
+"Predicting the age of abalone using regression"
 --
-
 
 
 ## Methods
